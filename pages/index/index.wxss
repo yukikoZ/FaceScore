@@ -1,0 +1,85 @@
+/**index.wxss**/
+
+page {
+    background-color: #48d1cc;
+}
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.pic-info {
+    margin-top: 6vh;
+    border: solid #fff;
+    border-width: 30rpx 30rpx 30rpx 30rpx;
+    box-shadow: 10rpx 10rpx 15rpx #333;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 20rpx;
+}
+.pic-none {
+    width: 90%;
+    height: 90%;
+}
+.pic-inner {
+    width: 100%;
+    height: 100%;
+}
+.close {
+    position: absolute;
+    top: 7vh;
+    right: 12vw;
+}
+.close .arrow {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 38rpx;
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 25rpx;
+    background: #48d1cc;
+    color: #fff;
+}
+.pic-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50rpx;
+    color: #fff;
+}
+.pic-result .score-box{
+    font-size: 34rpx;
+    background: #fff;
+    padding: 10rpx 20rpx;
+    border-radius: 20rpx;
+    color: #48d1cc;
+}
+.pic-result .score {
+    font-size: 50rpx;
+}
+
+.btn-select {
+    margin-top: 80rpx;
+}
+.btn-compute {
+    margin-top: 50rpx;
+    margin-bottom: 50rpx
+}
+.btn-share {
+    margin-top: 50rpx;
+}
+.btn-bottom {
+    margin-top: 30rpx;
+    margin-bottom: 50rpx;
+}
+
+
+
+
+

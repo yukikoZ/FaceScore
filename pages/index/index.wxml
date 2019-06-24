@@ -1,0 +1,29 @@
+<!--index.wxml-->
+
+<view class='container'>
+      
+      <view class="pic-info" style="width: {{ picSelfAdaptWidth }}vw; height: {{ picSelfAdaptHeight }}vh">
+        <image wx:if="{{ !testPicFile }}" style="width: 220px; height: 220px" class="pic-none" src="../../asset/pic_bg.png"></image>
+        <image wx:else class="pic-inner" src="{{ testPicFile }}"></image>
+      </view>
+
+       <view wx:if="{{ testPicFile && !testPicResult }}" class="close" bindtap="handleCancelPic">
+        <i class="arrow">×</i>
+       </view>
+      
+    <view class="pic-result" wx:if="{{ testPicResult }}">
+        <view class="score-box"><i class="icon-love"></i> 颜值 <span class="score">{{ testPicResult }}分</span></view>
+    </view>
+      
+      <button wx:if="{{ !testPicFile }}" bindtap='SelectImg' type="primary" size="default" class="btn btn-select">打开照片</button>
+      <button bindtap='ComputeScore' type="primary" size="default" wx:if="{{ testPicFile && !testPicResult }}" class="btn btn-compute">颜值鉴定</button>
+      
+      <button open-type="share" wx:if="{{ testPicResult }}" class="btn btn-share">分享鉴颜</button>
+      <button wx:if="{{ testPicResult }}" class="btn btn-bottom" bindtap="handlePlayAgain">再试一次</button>
+</view>
+
+
+
+
+   
+  
